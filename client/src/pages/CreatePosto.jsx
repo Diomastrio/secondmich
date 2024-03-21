@@ -84,12 +84,14 @@ export default function CreatePosto() {
   };
   return (
     <div className="p-3 max-w-3xl mx-auto min-h-screen">
-      <h1 className="text-center text-3xl my-7 font-semibold">Crea un producto</h1>
+      <h1 className="text-center text-3xl my-7 font-semibold">
+        Ingresa un proveedor
+      </h1>
       <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
         <div className="flex flex-col gap-4 sm:flex-row justify-between">
           <TextInput
             type="text"
-            placeholder="Titulo del producto"
+            placeholder="Nombre del proveedor"
             required
             id="title"
             className="flex-1"
@@ -163,4 +165,3 @@ export default function CreatePosto() {
     </div>
   );
 }
-
