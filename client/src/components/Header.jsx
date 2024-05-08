@@ -56,7 +56,7 @@ export default function Header() {
         className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white"
       >
         <span className="px-2 py-1 bg-gradient-to-r from-blue-500 via-blue-600 to-orange-500 rounded-lg text-white">
-         Proyecto
+          Proyecto
         </span>
         MERN
       </Link>
@@ -115,12 +115,12 @@ export default function Header() {
         <Navbar.Link active={path === "/"} as={"div"}>
           <Link to="/">Home</Link>
         </Navbar.Link>
-        {/* <Navbar.Link active={path === "/about"} as={"div"}>
+        {/* {/* <Navbar.Link active={path === "/about"} as={"div"}>
           <Link to="/about">Nosotros</Link>
-        </Navbar.Link>
-        <Navbar.Link active={path === "/projects"} as={"div"}>
-          <Link to="/projects">Proyectos</Link>
         </Navbar.Link> */}
+        <Navbar.Link active={path === "/client"} as={"div"}>
+          <Link to="/client">Proyectos</Link>
+        </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );
